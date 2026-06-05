@@ -78,7 +78,7 @@
     <div class="footer-info">
       <div class="footer-info-item">
         <span class="footer-info-label">When</span>
-        <span>Tuesdays &#8746; Lunch</span>
+        <span>Tuesdays &#8745; Lunch</span>
       </div>
       <div class="footer-info-item">
         <span class="footer-info-label">Room</span>
