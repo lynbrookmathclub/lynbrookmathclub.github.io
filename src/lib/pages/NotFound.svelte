@@ -2,7 +2,7 @@
   <span class="not-found-symbol" aria-hidden="true">∄</span>
   <h1 class="not-found-title">Page Not Found</h1>
   <p class="not-found-msg">
-    This page doesn't exist — or maybe it never did. (Proof by contradiction:
+    This page doesn't exist, or maybe it never did. (Proof by contradiction:
     assume it exists…)
   </p>
   <a href="/" class="btn btn--primary">← Back to Home</a>

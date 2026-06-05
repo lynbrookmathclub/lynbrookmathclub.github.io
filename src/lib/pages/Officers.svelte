@@ -1,6 +1,7 @@
 <script lang="ts">
   import {
     currentOfficers,
+    formatGradYearRange,
     pastOfficers,
     groupByGradYear,
   } from "../data/officers";
@@ -114,7 +115,7 @@
 
     {#each [...groupedAlumni.entries()] as [year, group]}
       <div class="alumni-year-group animate-fade-up">
-        <h3 class="alumni-year-group-year">{year}</h3>
+        <h3 class="alumni-year-group-year">{formatGradYearRange(year)}</h3>
         <div class="alumni-year-group-list">
           {#each group as alumnus}
             <div class="alumni-card">

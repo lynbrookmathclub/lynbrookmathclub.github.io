@@ -14,6 +14,10 @@ export interface PastOfficer {
   gradYear: number;
 }
 
+export function formatGradYearRange(gradYear: number): string {
+  return `${gradYear - 1}-${gradYear}`;
+}
+
 export const currentOfficers: Officer[] = [
   { id: 'president-1', name: 'Sohum Uttamchandani', role: 'President' },
   { id: 'president-2', name: 'Abhigyan Singh', role: 'President' },
@@ -34,7 +38,17 @@ export const pastOfficers: PastOfficer[] = [
   { name: 'Abhigyan Singh', role: 'Vice President', gradYear: 2026 },
   { name: 'Tianlin Liu', role: 'Treasurer', gradYear: 2026 },
   { name: 'Steven Xia', role: 'Secretary', gradYear: 2026 },
-  { name: 'bob', role: 'President', gradYear: 2025 },
+  { name: 'Brian Xue', role: 'President', gradYear: 2025 },
+  { name: 'Daniel Kim', role: 'President', gradYear: 2025 },
+  { name: 'Mia Liu', role: 'Vice President', gradYear: 2025 },
+  { name: 'Sanya Badhe', role: 'Vice President', gradYear: 2025 },
+  { name: 'Soham Uttamchandani', role: 'Treasurer', gradYear: 2025 },
+  { name: 'Benjamin Zhang', role: 'Secretary', gradYear: 2025 },
+  { name: 'Ryan Bansal', role: 'Public Relations Officer', gradYear: 2025 },
+  { name: 'Neel Kolhe', role: 'President', gradYear: 2024 },
+  { name: 'Brian Xue', role: 'Vice President', gradYear: 2024 },
+  { name: 'Sanya Badhe', role: 'Treasurer', gradYear: 2024 },
+  { name: 'Mia Liu', role: 'Secretary', gradYear: 2024 },
 ];
 
 export function groupByGradYear(officers: PastOfficer[]): Map<number, PastOfficer[]> {
