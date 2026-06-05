@@ -1,7 +1,6 @@
 <script lang="ts">
   export let src: string | undefined = undefined;
   export let alt = '';
-  export let label = '';
   export let tone = '#1b2a5c';
   export let aspectRatio = '4 / 3';
   export let className = '';
@@ -69,17 +68,4 @@
     gap: 4px;
   }
 
-  .visual-frame-label {
-    font-family: var(--font-display);
-    font-size: var(--text-lg);
-    font-weight: var(--weight-semibold);
-    letter-spacing: -0.01em;
-  }
-
-  .visual-frame-hint {
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: rgba(255, 255, 255, 0.65);
-  }
 </style>

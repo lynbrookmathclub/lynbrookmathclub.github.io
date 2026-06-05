@@ -26,7 +26,6 @@
             <VisualFrame
               src={activity.visual.src}
               alt={activity.visual.alt}
-              label={activity.visual.label}
               tone={activity.visual.tone}
               aspectRatio="1 / 1"
             />

@@ -132,7 +132,10 @@
   <div class="hero-pattern" aria-hidden="true"></div>
   <div class="container hero-inner">
     <div class="hero-content animate-fade-up">
-      <h1 class="hero-title">Lynbrook Math Club</h1>
+      <h1 class="hero-title">
+        <span class="hero-title-main">Lynbrook</span>
+        <span class="accent">Math Club</span>
+      </h1>
       <p class="hero-subtitle">
         Lynbrook Math Club, also known as Lynbrook Math Honor Society, brings
         together passionate problem solvers to learn, compete, and enjoy
@@ -211,13 +214,13 @@
       aspectRatio="4 / 3"
     />
     <div class="summer-camp-text">
-      <h2 class="summer-camp-title">Math Honor Society Summer Camp</h2>
+      <h2 class="summer-camp-title">Math Honor Society <span class="summer-camp-title-line2">Summer Camp</span></h2>
       <p class="summer-camp-desc">
         A week-long math camp for middle schoolers covering Algebra, Number
         Theory, Geometry, and Combinatorics at the AMC 8 and MATHCOUNTS level.
       </p>
       <p class="summer-camp-meta">
-        August 3–7, 2026 · 8am–4pm · Lynbrook High School · $400
+        August 3-7, 2026 · 9am-5pm · Rocklin Science Center at Lynbrook High School · $400
       </p>
       <div class="summer-camp-actions">
         <a href="/summer-camp" class="btn btn--secondary summer-camp-cta">
@@ -392,6 +395,11 @@
     line-height: var(--leading-relaxed);
   }
 
+  .hero-subtitle-accent {
+    color: var(--color-accent);
+    font-weight: var(--weight-medium);
+  }
+
   .hero-ctas {
     display: flex;
     gap: var(--space-3);
@@ -511,6 +519,15 @@
     line-height: var(--leading-snug);
     margin-bottom: var(--space-4);
     letter-spacing: -0.01em;
+  }
+
+  .summer-camp-title-line2 {
+    display: block;
+    color: var(--color-accent);
+  }
+
+  .accent {
+    color: var(--color-accent);
   }
 
   .summer-camp-desc {
