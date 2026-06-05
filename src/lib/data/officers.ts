@@ -28,10 +28,13 @@ export const currentOfficers: Officer[] = [
 ];
 
 export const pastOfficers: PastOfficer[] = [
-  { name: 'Alice', role: 'President', gradYear: 2026 },
-  { name: 'Bob', role: 'Vice President', gradYear: 2026 },
-  { name: 'Carl', role: 'Secretary', gradYear: 2026 },
-  { name: 'David', role: 'Treasurer', gradYear: 2026 },
+  { name: 'Benjamin Zhang', role: 'President', gradYear: 2026 },
+  { name: 'Mia Liu', role: 'President', gradYear: 2026 },
+  { name: 'Soham Uttamchandani', role: 'Vice President', gradYear: 2026 },
+  { name: 'Abhigyan Singh', role: 'Vice President', gradYear: 2026 },
+  { name: 'Tianlin Liu', role: 'Treasurer', gradYear: 2026 },
+  { name: 'Steven Xia', role: 'Secretary', gradYear: 2026 },
+  { name: 'bob', role: 'President', gradYear: 2025 },
 ];
 
 export function groupByGradYear(officers: PastOfficer[]): Map<number, PastOfficer[]> {
