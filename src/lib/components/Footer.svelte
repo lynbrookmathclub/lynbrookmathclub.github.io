@@ -59,7 +59,7 @@
         </a>
 
         <a
-          href="https://discord.gg/CPsye4mw"
+          href="https://discord.gg/fSBUQANXXU"
           target="_blank"
           rel="noopener noreferrer"
           class="footer-social-link"
