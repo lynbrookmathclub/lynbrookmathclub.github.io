@@ -47,7 +47,7 @@ export const pastOfficers: PastOfficer[] = [
   { name: 'Ryan Bansal', role: 'Public Relations Officer', gradYear: 2025 },
   { name: 'Neel Kolhe', role: 'President', gradYear: 2024 },
   { name: 'Brian Xue', role: 'Vice President', gradYear: 2024 },
-  { name: 'Daniel Kim', role: 'Vice President', gradYear: 2025 },
+  { name: 'Daniel Kim', role: 'Vice President', gradYear: 2024 },
   { name: 'Sanya Badhe', role: 'Treasurer', gradYear: 2024 },
   { name: 'Mia Liu', role: 'Secretary', gradYear: 2024 },
 ];
