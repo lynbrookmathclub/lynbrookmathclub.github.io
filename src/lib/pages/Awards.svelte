@@ -7,9 +7,9 @@
 
 <div class="page-header">
   <div class="container page-header-inner animate-fade-up">
-    <h1 class="page-header-title text-section-title">Awards & Accolades</h1>
+    <h1 class="page-header-title text-section-title">Awards and Accolades</h1>
     <p class="page-header-subtitle">
-      Lynbrook Math Club's competitive results and program milestones for the 2025–26 year.
+      Lynbrook Math Club's competitive results and awards for the 2025-26 year.
     </p>
   </div>
 </div>
@@ -43,7 +43,7 @@
   <hr class="divider" />
 
   <section class="awards-section">
-    <h2 class="awards-section-title text-section-title">Programs & Outreach</h2>
+    <h2 class="awards-section-title text-section-title">Programs (?)</h2>
     <div class="programs-grid">
       {#each programs as result, i}
         <article class="program-card animate-fade-up" style="animation-delay:{i * 60}ms">

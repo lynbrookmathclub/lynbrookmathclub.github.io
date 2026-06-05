@@ -167,9 +167,7 @@
           style:flex={aboutGallery.weights[columnIndex]}
         >
           {#each column as img, i}
-            <figure
-              class="about-photo animate-fade-up animate-fade-up-{i + 1}"
-            >
+            <figure class="about-photo animate-fade-up animate-fade-up-{i + 1}">
               <img class="about-photo-image" src={img.src} alt={img.alt} />
               <figcaption class="about-photo-caption">{img.alt}</figcaption>
             </figure>
@@ -236,7 +234,7 @@
   </div>
 </section>
 
-<section class="section recent-slides">
+<section class="section recent-slides surface-alt">
   <div class="container">
     <div class="section-header">
       <h2 class="text-section-title">Recent Meeting Slides</h2>
@@ -253,47 +251,49 @@
     </div>
   </div>
 </section>
-
-<section class="section activities-teaser">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="text-section-title">Competitions & Programs</h2>
-      <a href="/activities" class="btn btn--ghost">All Activities</a>
-    </div>
-    <div class="activities-teaser-grid">
-      {#each featuredActivities as activity, i}
-        <a
-          href="/activities"
-          class="activity-teaser-card animate-fade-up animate-fade-up-{i + 1}"
-        >
-          <VisualFrame
-            className="activity-teaser-card-media"
-            src={activity.visual.src}
-            alt={activity.visual.alt}
-            label={activity.visual.label}
-            tone={activity.visual.tone}
-            aspectRatio="1 / 1"
-          />
-          <div class="activity-teaser-card-content">
-            <div class="activity-teaser-card-name-row">
-              <h3 class="activity-teaser-card-name">{activity.shortName}</h3>
+{#if false}
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="text-section-title">Competitions & Programs</h2>
+        <a href="/activities" class="btn btn--ghost">All Activities</a>
+      </div>
+      <div class="activities-teaser-grid">
+        {#each featuredActivities as activity, i}
+          <a
+            href="/activities"
+            class="activity-teaser-card animate-fade-up animate-fade-up-{i + 1}"
+          >
+            <VisualFrame
+              className="activity-teaser-card-media"
+              src={activity.visual.src}
+              alt={activity.visual.alt}
+              label={activity.visual.label}
+              tone={activity.visual.tone}
+              aspectRatio="1 / 1"
+            />
+            <div class="activity-teaser-card-content">
+              <div class="activity-teaser-card-name-row">
+                <h3 class="activity-teaser-card-name">{activity.shortName}</h3>
+              </div>
+              <p class="activity-teaser-card-desc">{activity.description}</p>
             </div>
-            <p class="activity-teaser-card-desc">{activity.description}</p>
-          </div>
-        </a>
-      {/each}
+          </a>
+        {/each}
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
+{/if}
 <section class="section potw">
   <div class="container potw-inner">
     <div class="potw-header">
       <h2 class="text-section-title">Problem of the Week</h2>
       <p class="potw-meta-line">
         <span class="potw-meta-week">{potw.weekOf}</span>
-        <span class="potw-meta-sep">·</span>
-        <span class="potw-meta-diff">{potw.difficulty}</span>
+        {#if potw.difficulty}
+          <span class="potw-meta-sep">·</span>
+          <span class="potw-meta-diff">{potw.difficulty}</span>
+        {/if}
         {#if potw.source}
           <span class="potw-meta-sep">·</span>
           <span class="potw-meta-src">{potw.source}</span>
@@ -558,7 +558,7 @@
     gap: var(--space-5);
   }
 
-  .activities-teaser {
+  .surface-alt {
     background: var(--color-surface-alt);
   }
 
@@ -660,7 +660,7 @@
   }
 
   .potw-problem {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
     color: var(--color-text);
     margin-bottom: var(--space-6);
     line-height: var(--leading-relaxed);

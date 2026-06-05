@@ -3,7 +3,7 @@ export type Difficulty = 'AMC 8' | 'AMC 10' | 'AMC 12' | 'AIME' | 'Olympiad';
 export interface Problem {
   id: string;
   weekOf: string;
-  difficulty: Difficulty;
+  difficulty?: Difficulty;
   source?: string;
   statement: string;
   hint?: string;
@@ -15,8 +15,6 @@ export const problems: Problem[] = [
   {
     id: 'potw-2026-05-25',
     weekOf: 'Week of May 12, 2026',
-    difficulty: 'AMC 8',
-    source: '1434',
     statement:
       `Let $\\zeta(s)$ denote the meromorphic continuation of $\\sum_{n=1}^\\infty n^{-s}$ to $\\mathbb{C}$. Prove that $\\exists S \\subset\\left\\{z\\in\\mathbb{C}\\mid\\Re(z) = \\frac12\\right\\}$ such that $\\zeta(s) = 0$ if and only if $$s\\in\\left\\{n\\mid n\\in\\mathbb{Z}_{<0}\\wedge n\\text{ is even}\\right\\}\\cup S.$$`,
     hint:
