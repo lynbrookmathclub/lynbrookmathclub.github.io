@@ -205,32 +205,38 @@
 
 <section class="summer-camp">
   <div class="container summer-camp-inner">
-    <VisualFrame
-      className="summer-camp-visual"
-      src="/media/summer-camp-2026.jpg"
-      alt="Math Honor Society Summer Camp"
-      label="Summer Camp"
-      tone="#0f1a3d"
-      aspectRatio="4 / 3"
-    />
+    <div class="summer-camp-visual-wrap">
+      <VisualFrame
+        className="summer-camp-visual"
+        src="/summer-camp-flyer.png"
+        alt="Math Honor Society Summer Camp"
+        tone="#0f1a3d"
+        aspectRatio="auto"
+      />
+    </div>
     <div class="summer-camp-text">
-      <h2 class="summer-camp-title">Math Honor Society <span class="summer-camp-title-line2">Summer Camp</span></h2>
+      <h2 class="summer-camp-title">
+        Math Honor Society <span class="summer-camp-title-line2"
+          >Summer Camp</span
+        >
+      </h2>
       <p class="summer-camp-desc">
         A week-long math camp for middle schoolers covering Algebra, Number
         Theory, Geometry, and Combinatorics at the AMC 8 and MATHCOUNTS level.
       </p>
       <p class="summer-camp-meta">
-        August 3-7, 2026 · 9am-5pm · Rocklin Science Center at Lynbrook High School · $400
+        August 3-7, 2026 · 9am-5pm · Rocklin Science Center at Lynbrook High
+        School · $400
       </p>
       <div class="summer-camp-actions">
-        <a href="/summer-camp" class="btn btn--secondary summer-camp-cta">
-          View camp page
-        </a>
         <a
-          href="mailto:lynbrookmath@gmail.com"
+          href="https://bit.ly/lmhsmathcamp"
           class="btn btn--accent summer-camp-cta"
         >
-          Sign Up · Email Us
+          Sign Up!
+        </a>
+        <a href="/summer-camp" class="btn btn--secondary summer-camp-cta">
+          Learn more
         </a>
       </div>
     </div>
@@ -271,7 +277,6 @@
               className="activity-teaser-card-media"
               src={activity.visual.src}
               alt={activity.visual.alt}
-              label={activity.visual.label}
               tone={activity.visual.tone}
               aspectRatio="1 / 1"
             />
@@ -500,15 +505,16 @@
 
   .summer-camp-inner {
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
     align-items: center;
     padding-top: var(--space-12);
     padding-bottom: var(--space-12);
     gap: var(--space-8);
   }
 
-  .summer-camp-visual {
-    border-radius: var(--radius-xl);
+  .summer-camp-visual-wrap {
+    width: min(100%, 360px);
+    justify-self: start;
   }
 
   .summer-camp-title {
@@ -748,6 +754,9 @@
     }
     .summer-camp-inner {
       grid-template-columns: 1fr;
+    }
+    .summer-camp-visual-wrap {
+      width: min(100%, 420px);
     }
   }
 

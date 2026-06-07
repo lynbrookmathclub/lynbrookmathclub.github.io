@@ -20,10 +20,17 @@
 
 <div
   class={`visual-frame ${className}`.trim()}
-  style={`--visual-tone:${tone}; aspect-ratio:${aspectRatio};`}
+  class:visual-frame--auto={aspectRatio === 'auto'}
+  style={`--visual-tone:${tone};${aspectRatio !== 'auto' ? ` aspect-ratio:${aspectRatio};` : ''}`}
 >
   {#if src && !broken}
     <img class="visual-frame-image" {src} {alt} on:error={handleError} />
+  {:else}
+    <div class="visual-frame-fallback" role="img" aria-label={alt}>
+      <div class="visual-frame-fallback-copy">
+        {alt || "Image unavailable"}
+      </div>
+    </div>
   {/if}
 </div>
 
@@ -49,6 +56,22 @@
   .visual-frame-image {
     object-fit: cover;
     display: block;
+  }
+
+  .visual-frame--auto .visual-frame-image {
+    position: static;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .visual-frame--auto .visual-frame-fallback {
+    position: static;
+    inset: auto;
+    width: 100%;
+    min-height: 240px;
+    height: auto;
   }
 
   .visual-frame-fallback {

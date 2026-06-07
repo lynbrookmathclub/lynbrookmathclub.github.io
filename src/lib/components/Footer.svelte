@@ -101,7 +101,6 @@
   .footer {
     background: var(--color-primary-dark);
     color: rgba(255, 255, 255, 0.7);
-    margin-top: var(--space-12);
     border-top: 1px solid rgba(255, 255, 255, 0.06);
   }
 
