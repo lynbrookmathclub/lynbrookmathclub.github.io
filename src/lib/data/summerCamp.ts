@@ -20,13 +20,13 @@ export interface CampDetail {
 
 export const campInstructors: CampInstructor[] = [
   {
-    name: 'Justin Kim',
+    name: 'Sohum Uttamchandani',
     achievements: [
       '1434 (TBC)'
     ],
   },
   {
-    name: 'Sohum Uttamchandani',
+    name: 'Justin Kim',
     achievements: [
       '1434 (TBC)'
     ],
