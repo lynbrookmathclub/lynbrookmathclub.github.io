@@ -58,6 +58,7 @@ export const campInstructors: CampInstructor[] = [
   },
   {
     name: 'Abhigyan Singh',
+    photoUrl: '/staff/abhigyan_singh.jpeg',
     achievements: [
     ],
   },
@@ -69,7 +70,7 @@ export const campInstructors: CampInstructor[] = [
       'AMC 12/10/8 Honor Roll & Distinguished Honor Roll',
       'Math Prize for Girls Honorable Mention',
       'MPFG Olympiad Gold Medalist',
-      'BMT Geometry T10',
+      'BMT Geometry Top 10',
       'SMT Honorable Mention',
     ],
   },
@@ -80,6 +81,7 @@ export const campInstructors: CampInstructor[] = [
   },
   {
     name: 'Steven Xia',
+    photoUrl: "staff/steven_xia.png",
     achievements: [
     ],
   },
@@ -91,6 +93,11 @@ export const campInstructors: CampInstructor[] = [
   {
     name: 'Nitin Reddy Vaka',
     achievements: [
+      'Barely finished introduction to geometry',
+      "Read EGMO (didn't understand)",
+      "Managed to solve AMC12 P2, almost got P1",
+      "4x AIME Qualifier",
+      "USAJMO Qualifier"
     ],
   },
   {

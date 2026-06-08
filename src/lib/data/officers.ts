@@ -1,5 +1,5 @@
 export interface Officer {
-  id: string;
+  id?: string;
   name: string;
   role: string;
   grade?: number;
@@ -19,16 +19,16 @@ export function formatGradYearRange(gradYear: number): string {
 }
 
 export const currentOfficers: Officer[] = [
-  { id: 'president-1', name: 'Sohum Uttamchandani', role: 'President' },
-  { id: 'president-2', name: 'Abhigyan Singh', role: 'President' },
-  { id: 'vp-1', name: 'Tianlin Liu', role: 'Vice President' },
-  { id: 'vp-2', name: 'Tanish Kolhe', role: 'Vice President' },
-  { id: 'treasurer', name: 'Nitin Reddy Vaka', role: 'Treasurer' },
-  { id: 'secretary-1', name: 'Steven Xia', role: 'Secretary & Operations' },
-  { id: 'secretary-2', name: 'Benjamin Oh', role: 'Secretary & Operations' },
-  { id: 'pr', name: 'Catherine Jian', role: 'Public Relations Officer' },
-  { id: 'tech', name: 'Mason Shu', role: 'Tech Officer' },
-  { id: 'counsel', name: 'Benjamin Zhang', role: 'Counsel & Mentor' },
+  { name: 'Sohum Uttamchandani', role: 'President', photoUrl: '/staff/sohum_uttamchandani.png' },
+  { name: 'Abhigyan Singh', role: 'President', photoUrl: '/staff/abhigyan_singh.jpeg' },
+  { name: 'Tianlin Liu', role: 'Vice President', photoUrl: '/staff/tianlin_liu.png' },
+  { name: 'Tanish Kolhe', role: 'Vice President' },
+  { name: 'Nitin Reddy Vaka', role: 'Treasurer' },
+  { name: 'Steven Xia', role: 'Secretary & Operations', photoUrl: '/staff/steven_xia.png' },
+  { name: 'Benjamin Oh', role: 'Secretary & Operations' },
+  { name: 'Catherine Jian', role: 'Public Relations Officer' },
+  { name: 'Mason Shu', role: 'Tech Officer' },
+  { name: 'Benjamin Zhang', role: 'Counsel & Mentor', photoUrl: '/staff/benjamin_zhang.jpg' },
 ];
 
 export const pastOfficers: PastOfficer[] = [

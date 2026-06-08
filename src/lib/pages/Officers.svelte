@@ -63,13 +63,21 @@
           class="officer-card animate-fade-up"
           style="animation-delay:{i * 50}ms"
         >
-          <div
-            class="officer-card-avatar"
-            style="background: hsl({hue}, 35%, 22%); color: hsl({hue}, 60%, 75%);"
-            aria-hidden="true"
-          >
-            {officer.name.trim()[0] ?? "?"}
-          </div>
+          {#if officer.photoUrl}
+            <img
+              class="officer-card-photo"
+              src={officer.photoUrl}
+              alt={officer.name}
+            />
+          {:else}
+            <div
+              class="officer-card-avatar"
+              style="background: hsl({hue}, 35%, 22%); color: hsl({hue}, 60%, 75%);"
+              aria-hidden="true"
+            >
+              {officer.name.trim()[0] ?? "?"}
+            </div>
+          {/if}
           <div class="officer-card-info">
             <div class="officer-card-name-row">
               <h3 class="officer-card-name">{officer.name}</h3>
@@ -224,6 +232,16 @@
     font-size: var(--text-2xl);
     font-weight: var(--weight-semibold);
     flex-shrink: 0;
+  }
+
+  .officer-card-photo {
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    border: 1px solid var(--color-border);
   }
 
   .officer-card-info {
