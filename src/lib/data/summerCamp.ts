@@ -54,14 +54,6 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
   {
-    name: 'Brian Lu',
-    achievements: [
-      '2x AIME Qualifier',
-      'AMC10 Distinguished Honor Role'
-    ],
-  },
-
-  {
     name: 'Benjamin Zhang',
     photoUrl: '/staff/benjamin_zhang.jpg',
     achievements: [
@@ -77,11 +69,19 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
   {
+    name: 'Brian Lu',
+    achievements: [
+      '2x AIME Qualifier',
+      'AMC10 Distinguished Honor Role'
+    ],
+  },
+  {
     name: 'Abhigyan Singh',
     photoUrl: '/staff/abhigyan_singh.jpeg',
     achievements: [
     ],
   },
+
   {
     name: 'Tanish Kolhe',
     achievements: [
