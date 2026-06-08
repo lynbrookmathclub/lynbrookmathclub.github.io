@@ -48,8 +48,8 @@ export const campCurriculum: CampSubject[] = [
       'Algebra Manipulations',
       'Number Sense',
       'Word Problems',
-      'Sequences & Series',
-      'Quadratics & Vietas Formulas',
+      'Sequences and Series',
+      'Quadratics and Vietas Formulas',
     ],
   },
   {
