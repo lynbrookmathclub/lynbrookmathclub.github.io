@@ -45,9 +45,11 @@ export const campCurriculum: CampSubject[] = [
     label: 'Algebra',
     symbol: '\\sum',
     topics: [
-      'Factoring techniques',
-      '1434',
-      '67',
+      'Algebra Manipulations',
+      'Number Sense',
+      'Word Problems',
+      'Sequences & Series',
+      'Quadratics & Vietas Formulas',
     ],
   },
   {
@@ -55,19 +57,11 @@ export const campCurriculum: CampSubject[] = [
     label: 'Combinatorics',
     symbol: '\\binom{n}{k}',
     topics: [
-      'idk',
-      '1434',
-      '67',
-    ],
-  },
-  {
-    id: 'nt',
-    label: 'Number Theory',
-    symbol: '\\mathbb{N}',
-    topics: [
-      'Factoring techniques',
-      '1434',
-      '67',
+      'Permutations and Combinations',
+      'Casework',
+      'Assorted Counting Techniques',
+      'Probability Applications',
+      'Expected Value',
     ],
   },
   {
@@ -75,9 +69,23 @@ export const campCurriculum: CampSubject[] = [
     label: 'Geometry',
     symbol: '△',
     topics: [
-      '14341434',
-      '1434',
-      '67',
+      'Angle Chasing',
+      'Special Triangles',
+      'Similarity and Congruence',
+      'Area Techniques',
+      'Coordinates and 3D',
+    ],
+  },
+  {
+    id: 'nt',
+    label: 'Number Theory',
+    symbol: '\\mathbb{N}',
+    topics: [
+      'Divisibility',
+      'Prime Factorization',
+      'GCD and LCM',
+      'Base Systems',
+      'Modular Arithmetic',
     ],
   },
 ];

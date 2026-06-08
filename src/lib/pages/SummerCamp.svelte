@@ -230,33 +230,43 @@
       <table class="sched-table">
         <tbody>
           <tr
-            ><td class="sched-time">9:00 AM to idk</td><td class="sched-desc"
-              >Something</td
+            ><td class="sched-time">9:00 AM - 10:30 AM</td><td class="sched-desc"
+              >Algebra</td
             ></tr
           >
           <tr
-            ><td class="sched-time">idk AM to idk AM</td><td class="sched-desc"
-              >1434</td
+            ><td class="sched-time">10:30 AM - 10:45 AM</td><td class="sched-desc"
+              >Break</td
             ></tr
           >
           <tr
-            ><td class="sched-time">idk AM to idk AM</td><td class="sched-desc"
-              >1434</td
+            ><td class="sched-time">10:45 AM - 12:15 PM</td><td class="sched-desc"
+              >Combinatorics</td
             ></tr
           >
           <tr
-            ><td class="sched-time">idk AM to idk AM</td><td class="sched-desc"
-              >1434</td
+            ><td class="sched-time">12:15 PM - 1:15 PM</td><td class="sched-desc"
+              >Lunch</td
             ></tr
           >
           <tr
-            ><td class="sched-time">idk AM to idk AM</td><td class="sched-desc"
-              >1434</td
+            ><td class="sched-time">1:15 PM - 2:45 PM</td><td class="sched-desc"
+              >Geometry</td
             ></tr
           >
           <tr
-            ><td class="sched-time">idk to 5:00 PM</td><td class="sched-desc"
-              >Game</td
+            ><td class="sched-time">2:45 PM - 3:00 PM</td><td class="sched-desc"
+              >Break</td
+            ></tr
+          >
+          <tr
+            ><td class="sched-time">3:00 PM - 4:30 PM</td><td class="sched-desc"
+              >Number Theory</td
+            ></tr
+          >
+          <tr
+            ><td class="sched-time">4:30 PM - 5:00 PM</td><td class="sched-desc"
+              >Review</td
             ></tr
           >
         </tbody>
