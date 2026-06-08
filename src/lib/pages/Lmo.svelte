@@ -21,11 +21,7 @@
 <div class="container detail-page">
   <section class="detail-hero">
     <div class="detail-hero-media detail-hero-media--logo">
-      <img
-        class="detail-hero-logo"
-        src={lmo.visual.src}
-        alt={lmo.visual.alt}
-      />
+      <img class="detail-hero-logo" src={lmo.visual.src} alt={lmo.visual.alt} />
     </div>
 
     <div class="detail-hero-body">
@@ -34,7 +30,8 @@
         LMO is organized entirely by Lynbrook Math Club officers and members,
         open to all students of the Fremont Union High School District. The
         difficulty level spans from AMCs-level to AIME-level. The
-        problem-writing, logistics, and public relations are handled
+        problem-writing, logistics, and public relations are handled by
+        students.
       </p>
 
       <div class="detail-hero-actions">
