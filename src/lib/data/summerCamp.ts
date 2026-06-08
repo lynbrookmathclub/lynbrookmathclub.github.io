@@ -50,50 +50,52 @@ export const campInstructors: CampInstructor[] = [
   },
   {
     name: 'Benjamin Zhang',
+    photoUrl: '/staff/benjamin_zhang.jpg',
     achievements: [
-      '1434'
+      'USAJMO Honarable Mention',
+      '4x AIME Qualifer'
     ],
   },
   {
     name: 'Abhigyan Singh',
     achievements: [
-      '1434'
     ],
   },
   {
     name: 'Tianlin Liu',
+    photoUrl: '/staff/tianlin_liu.png',
     achievements: [
-      '1434'
+      '4x AIME Qualifier',
+      'AMC 12/10/8 Honor Roll & Distinguished Honor Roll',
+      'Math Prize for Girls Honorable Mention',
+      'MPFG Olympiad Gold Medalist',
+      'BMT Geometry T10',
+      'SMT Honorable Mention',
     ],
   },
   {
     name: 'Tanish Kolhe',
     achievements: [
-      '1434'
     ],
   },
   {
     name: 'Steven Xia',
     achievements: [
-      '1434'
     ],
   },
   {
     name: 'Benjamin Oh',
     achievements: [
-      '1434'
     ],
   },
   {
     name: 'Nitin Reddy Vaka',
     achievements: [
-      '1434'
     ],
   },
   {
     name: 'Catherine Jian',
     achievements: [
-      '1434'
     ],
   },
   {

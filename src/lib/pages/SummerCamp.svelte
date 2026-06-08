@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import katex from "katex";
+  import type { CampInstructor } from "../data/summerCamp";
   import {
     campInstructors,
     campCurriculum,
@@ -16,6 +18,8 @@
   ];
 
   let activeSection = "overview";
+  let instructorColumns = 4;
+  let instructorRows: CampInstructor[][] = [];
 
   const subjectColors: Record<string, string> = {
     alg: "#1b2a5c",
@@ -41,6 +45,27 @@
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
     activeSection = id;
   }
+
+  function chunk<T>(items: T[], size: number): T[][] {
+    const rows: T[][] = [];
+    for (let i = 0; i < items.length; i += size) {
+      rows.push(items.slice(i, i + size));
+    }
+    return rows;
+  }
+
+  $: instructorRows = chunk(campInstructors, instructorColumns);
+
+  onMount(() => {
+    const updateColumns = () => {
+      const width = window.innerWidth;
+      instructorColumns = width >= 1100 ? 4 : width >= 900 ? 3 : width >= 700 ? 2 : 1;
+    };
+
+    updateColumns();
+    window.addEventListener("resize", updateColumns);
+    return () => window.removeEventListener("resize", updateColumns);
+  });
 </script>
 
 <div class="page-header">
@@ -284,41 +309,51 @@
       </p>
     </div>
 
-    <div class="instructors-grid">
-      {#each campInstructors as instructor, i}
-        <article
-          class="instructor-card animate-fade-up"
-          style="animation-delay:{i * 70}ms"
-        >
-          <div class="instr-photo-wrap">
-            {#if instructor.photoUrl}
-              <img
-                src={instructor.photoUrl}
-                alt={instructor.name}
-                class="instr-photo"
-              />
-            {:else}
-              <div class="instr-photo-placeholder" aria-hidden="true">
-                <span class="instr-initials">
-                  {instructor.name
-                    .trim()
-                    .split(" ")
-                    .map((w: string) => w[0])
-                    .join("")}
-                </span>
+    <div
+      class="instructors-grid"
+      style="--instructor-columns: {instructorColumns}"
+    >
+      {#each instructorRows as row, rowIndex}
+        <div class="instructor-row">
+          {#each row as instructor, i}
+            <article
+              class="instructor-card animate-fade-up"
+              style="animation-delay:{(rowIndex * instructorColumns + i) * 70}ms"
+            >
+              <div class="instr-photo-wrap">
+                {#if instructor.photoUrl}
+                  <img
+                    src={instructor.photoUrl}
+                    alt={instructor.name}
+                    class="instr-photo"
+                  />
+                {:else}
+                  <div class="instr-photo-placeholder" aria-hidden="true">
+                    <span class="instr-initials">
+                      {instructor.name
+                        .trim()
+                        .split(" ")
+                        .map((w: string) => w[0])
+                        .join("")}
+                    </span>
+                  </div>
+                {/if}
               </div>
-            {/if}
-          </div>
-          <div class="instr-info">
-            <h3 class="instr-name">{instructor.name}</h3>
-            <span class="instr-role">{instructor.role}</span>
-            <ul class="instr-achievements">
-              {#each instructor.achievements as ach}
-                <li>{ach}</li>
-              {/each}
-            </ul>
-          </div>
-        </article>
+              <div class="instr-info">
+                <h3 class="instr-name">{instructor.name}</h3>
+                <span class="instr-role">{instructor.role}</span>
+                <ul class="instr-achievements">
+                  {#each instructor.achievements as ach}
+                    <li>{ach}</li>
+                  {/each}
+                </ul>
+              </div>
+            </article>
+          {/each}
+        </div>
+        {#if rowIndex < instructorRows.length - 1}
+          <div class="instructor-row-divider" aria-hidden="true"></div>
+        {/if}
       {/each}
     </div>
   </div>
@@ -674,9 +709,20 @@
     background: var(--color-surface-alt);
   }
   .instructors-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .instructor-row {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(var(--instructor-columns), minmax(0, 1fr));
     gap: var(--space-6);
+    align-items: start;
+  }
+  .instructor-row-divider {
+    height: 1px;
+    margin: var(--space-6) 0;
+    background: rgba(27, 42, 92, 0.24);
+    border-radius: 999px;
   }
   .instructor-card {
     display: flex;
@@ -742,21 +788,16 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: var(--space-1);
     margin-top: var(--space-1);
   }
   .instr-achievements li {
     font-size: var(--text-sm);
     color: var(--color-text-muted);
     line-height: var(--leading-normal);
-    padding: var(--space-2) 0;
-    border-bottom: 1px solid var(--color-border-light);
   }
   .instr-achievements li::marker {
     color: var(--color-accent);
-  }
-  .instr-achievements li:last-child {
-    border-bottom: none;
   }
   .cta-section {
     background: var(--color-primary);
@@ -837,6 +878,9 @@
       width: 100%;
       max-width: 100%;
     }
+    .instructor-row {
+      grid-template-columns: repeat(var(--instructor-columns), minmax(0, 1fr));
+    }
     .instructor-card {
       align-items: flex-start;
       text-align: left;
@@ -844,23 +888,12 @@
     .instr-info {
       align-items: flex-start;
     }
-    .instr-achievements {
-      width: 100%;
-    }
     .cta-inner {
       flex-direction: column;
       text-align: center;
     }
     .cta-actions {
       justify-content: center;
-    }
-    .instructors-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media (max-width: 480px) {
-    .instructors-grid {
-      grid-template-columns: 1fr;
     }
   }
 </style>
