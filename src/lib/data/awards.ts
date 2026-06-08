@@ -19,9 +19,9 @@ export const results: CompetitionResult[] = [
     highlights: [
       'Team awards: 2nd Place in Guts and 3rd Place Overall',
       'General: Sophia Fan 10th; DHM for Derek Hu, Mason Shu, Kevin Zhu, Kartik Gudapati; HM for Wenbo Xi, Wenyuan Xi, Astin Zhou, Alber Wu, Ashmit Arasada, Vishwesh Chinthukumar',
-      'Algebra: Sohum Uttamchandani 3rd; DHM for Nitin Vaka, Ryan Wang, Benjamin Zhang, Abhigyan Singh, Tianlin Liu, Henry Wang, Yunfei Xia; HM for Evan Gai, Vincent Qin, Sungrok Kim, Zhaitong Wang, Jasmine Lien, Yutong Qiu',
+      'Algebra: Sohum Uttamchandani 3rd; DHM for Nitin Reddy Vaka, Ryan Wang, Benjamin Zhang, Abhigyan Singh, Tianlin Liu, Henry Wang, Yunfei Xia; HM for Evan Gai, Vincent Qin, Sungrok Kim, Zhaitong Wang, Jasmine Lien, Yutong Qiu',
       'Calculus: DHM for Ryan Wang; HM for Vincent Qin and Evan Liu',
-      'Discrete: Sohum Uttamchandani 1st; DHM for Nitin Vaka and Ben Oh; HM for Benjamin Zhang and Zhaitong Wang',
+      'Discrete: Sohum Uttamchandani 1st; DHM for Nitin Reddy Vaka and Ben Oh; HM for Benjamin Zhang and Zhaitong Wang',
       'Geometry: Ben Oh 8th; DHM for Tianlin Liu, Henry Wang, Tanish Kolhe, Yunfei Xia; HM for Yutong Qiu and Evan Liu',
     ],
   },
@@ -35,7 +35,7 @@ export const results: CompetitionResult[] = [
     highlights: [
       'Watergirl: 7th overall, Power DHM, Team DHM, Guts 10th',
       'Fireboy: Overall DHM, Power HM, Team DHM, Guts 8th',
-      'Algebra: DHM for Sohil Rathi, Abhigyan Singh, Benjamin Oh, Benjamin Zhang, Nitin Vaka; HM for Tianlin Liu, Ishaan Mittal, Ryan Wang',
+      'Algebra: DHM for Sohil Rathi, Abhigyan Singh, Benjamin Oh, Benjamin Zhang, Nitin Reddy Vaka; HM for Tianlin Liu, Ishaan Mittal, Ryan Wang',
       'Discrete: DHM for Sohil Rathi and Benjamin Zhang; HM for Matthew Yuan',
       'Calculus: Sohum Uttamchandani 7th; HM for Matthew Yuan and Ryan Wang',
       'Geometry: Abhigyan Singh 6th; DHM for Ishaan Mittal and Sohum Uttamchandani; HM for Tianlin Liu and Steven Xia',

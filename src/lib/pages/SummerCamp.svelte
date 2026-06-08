@@ -742,13 +742,21 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--space-1);
+    gap: 0;
     margin-top: var(--space-1);
   }
   .instr-achievements li {
     font-size: var(--text-sm);
     color: var(--color-text-muted);
     line-height: var(--leading-normal);
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  .instr-achievements li::marker {
+    color: var(--color-accent);
+  }
+  .instr-achievements li:last-child {
+    border-bottom: none;
   }
   .cta-section {
     background: var(--color-primary);

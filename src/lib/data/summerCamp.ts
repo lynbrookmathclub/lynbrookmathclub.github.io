@@ -20,21 +20,86 @@ export interface CampDetail {
 
 export const campInstructors: CampInstructor[] = [
   {
-    name: 'Sohum Uttamchandani',
-    achievements: [
-      '1434 (TBC)'
-    ],
-  },
-  {
     name: 'Justin Kim',
+    photoUrl: '/staff/justin_kim.jpeg',
     achievements: [
-      '1434 (TBC)'
+      'MathCounts National Champion',
+      '2x MathCounts National CDR Qualifier',
+      '2x USAJMO Qualifier',
+      '1x USAJMO Honorable Mention',
+      'AMC12, AMC10, AMC8 Perfect Scorer',
     ],
   },
   {
     name: 'Brian Lu',
     achievements: [
-      '1434 (TBC)'
+      '2x AIME Qualifier',
+      'AMC10 Distinguished Honor Role'
+    ],
+  },
+  {
+    name: 'Sohum Uttamchandani',
+    photoUrl: '/staff/sohum_uttamchandani.png',
+    achievements: [
+      '3x USA(J)MO Qualifier',
+      'AIME, AMC12, AMC10, AMC8 Perfect Scorer',
+      'Caltech Math Meet 1st Place Individual',
+      'Berkeley Math Tournament 1st Place Discrete, 3rd Place Algebra',
+      'Stanford Math Tournament 7th Place Calculus',
+    ],
+  },
+  {
+    name: 'Benjamin Zhang',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Abhigyan Singh',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Tianlin Liu',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Tanish Kolhe',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Steven Xia',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Benjamin Oh',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Nitin Reddy Vaka',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Catherine Jian',
+    achievements: [
+      '1434'
+    ],
+  },
+  {
+    name: 'Mason Shu',
+    achievements: [
+      '1434'
     ],
   },
 ];

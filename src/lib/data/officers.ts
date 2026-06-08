@@ -23,7 +23,7 @@ export const currentOfficers: Officer[] = [
   { id: 'president-2', name: 'Abhigyan Singh', role: 'President' },
   { id: 'vp-1', name: 'Tianlin Liu', role: 'Vice President' },
   { id: 'vp-2', name: 'Tanish Kolhe', role: 'Vice President' },
-  { id: 'treasurer', name: 'Nitin Vaka', role: 'Treasurer' },
+  { id: 'treasurer', name: 'Nitin Reddy Vaka', role: 'Treasurer' },
   { id: 'secretary-1', name: 'Steven Xia', role: 'Secretary & Operations' },
   { id: 'secretary-2', name: 'Benjamin Oh', role: 'Secretary & Operations' },
   { id: 'pr', name: 'Catherine Jian', role: 'Public Relations Officer' },
