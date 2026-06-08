@@ -72,7 +72,7 @@ export const campInstructors: CampInstructor[] = [
     name: 'Brian Lu',
     achievements: [
       '2x AIME Qualifier',
-      'AMC10 Distinguished Honor Role'
+      'AMC10 Distinguished Honor Roll'
     ],
   },
   {
