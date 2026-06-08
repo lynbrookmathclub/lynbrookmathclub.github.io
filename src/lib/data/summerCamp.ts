@@ -69,6 +69,14 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
   {
+    name: 'Tanish Kolhe',
+    achievements: [
+      '4x AIME Qualifier',
+      '3x BMT Distinguished Honorable Mention',
+      'AMC8 Perfect Score'
+    ],
+  },
+  {
     name: 'Brian Lu',
     achievements: [
       '2x AIME Qualifier',
@@ -82,11 +90,6 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
 
-  {
-    name: 'Tanish Kolhe',
-    achievements: [
-    ],
-  },
   {
     name: 'Steven Xia',
     photoUrl: "staff/steven_xia.png",
