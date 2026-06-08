@@ -20,24 +20,6 @@ export interface CampDetail {
 
 export const campInstructors: CampInstructor[] = [
   {
-    name: 'Justin Kim',
-    photoUrl: '/staff/justin_kim.jpeg',
-    achievements: [
-      'MathCounts National Champion',
-      '2x MathCounts National CDR Qualifier',
-      '2x USAJMO Qualifier',
-      '1x USAJMO Honorable Mention',
-      'AMC12, AMC10, AMC8 Perfect Scorer',
-    ],
-  },
-  {
-    name: 'Brian Lu',
-    achievements: [
-      '2x AIME Qualifier',
-      'AMC10 Distinguished Honor Role'
-    ],
-  },
-  {
     name: 'Sohum Uttamchandani',
     photoUrl: '/staff/sohum_uttamchandani.png',
     achievements: [
@@ -49,17 +31,14 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
   {
-    name: 'Benjamin Zhang',
-    photoUrl: '/staff/benjamin_zhang.jpg',
+    name: 'Justin Kim',
+    photoUrl: '/staff/justin_kim.jpeg',
     achievements: [
-      'USAJMO Honarable Mention',
-      '4x AIME Qualifer'
-    ],
-  },
-  {
-    name: 'Abhigyan Singh',
-    photoUrl: '/staff/abhigyan_singh.jpeg',
-    achievements: [
+      'MathCounts National Champion',
+      '2x MathCounts National CDR Qualifier',
+      '2x USAJMO Qualifier',
+      '1x USAJMO Honorable Mention',
+      'AMC12, AMC10, AMC8 Perfect Scorer',
     ],
   },
   {
@@ -72,6 +51,35 @@ export const campInstructors: CampInstructor[] = [
       'MPFG Olympiad Gold Medalist',
       'BMT Geometry Top 10',
       'SMT Honorable Mention',
+    ],
+  },
+  {
+    name: 'Brian Lu',
+    achievements: [
+      '2x AIME Qualifier',
+      'AMC10 Distinguished Honor Role'
+    ],
+  },
+
+  {
+    name: 'Benjamin Zhang',
+    photoUrl: '/staff/benjamin_zhang.jpg',
+    achievements: [
+      'USAJMO Honarable Mention',
+      '4x AIME Qualifer'
+    ],
+  },
+  {
+    name: 'Nitin Reddy Vaka',
+    achievements: [
+      "USAJMO Qualifier",
+      "4x AIME Qualifier"
+    ],
+  },
+  {
+    name: 'Abhigyan Singh',
+    photoUrl: '/staff/abhigyan_singh.jpeg',
+    achievements: [
     ],
   },
   {
@@ -91,16 +99,6 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
   {
-    name: 'Nitin Reddy Vaka',
-    achievements: [
-      'Barely finished introduction to geometry',
-      "Read EGMO (didn't understand)",
-      "Managed to solve AMC12 P2, almost got P1",
-      "4x AIME Qualifier",
-      "USAJMO Qualifier"
-    ],
-  },
-  {
     name: 'Catherine Jian',
     achievements: [
     ],
@@ -108,7 +106,6 @@ export const campInstructors: CampInstructor[] = [
   {
     name: 'Mason Shu',
     achievements: [
-      '1434'
     ],
   },
 ];
