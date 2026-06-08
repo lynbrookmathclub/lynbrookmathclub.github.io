@@ -222,8 +222,7 @@
 
     <div class="sched-block">
       <p class="body-text">
-        Each day runs from <strong>9:00 AM to 5:00 PM</strong>. Lunch is or is
-        not provided (idk); students will (tbc)
+        Each day runs from <strong>9:00 AM to 5:00 PM</strong>. Lunch is provided and students will be supervised. 
       </p>
 
       <h3 class="sched-heading">Daily Schedule (Tentative)</h3>
