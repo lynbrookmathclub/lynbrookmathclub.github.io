@@ -94,6 +94,9 @@ export const campInstructors: CampInstructor[] = [
     name: 'Steven Xia',
     photoUrl: "staff/steven_xia.png",
     achievements: [
+      'Competitive Typsternity Player',
+      '3x AIME Qualifier',
+      'USAJMO Honorable Mention'
     ],
   },
   {
