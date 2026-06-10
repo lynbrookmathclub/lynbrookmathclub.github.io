@@ -389,6 +389,7 @@
     font-weight: var(--weight-semibold);
     color: white;
     line-height: var(--leading-tight);
+    margin-bottom: var(--space-4);
     letter-spacing: -0.02em;
     max-width: 680px;
   }
@@ -398,6 +399,7 @@
     color: rgba(255, 255, 255, 0.65);
     max-width: 520px;
     line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-8);
   }
 
   .hero-subtitle-accent {

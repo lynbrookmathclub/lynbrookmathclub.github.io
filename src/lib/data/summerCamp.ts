@@ -87,6 +87,9 @@ export const campInstructors: CampInstructor[] = [
     name: 'Abhigyan Singh',
     photoUrl: '/staff/abhigyan_singh.jpeg',
     achievements: [
+      '4x AIME Qualifier',
+      'BMT Geometry Top 10',
+      'SMT Geometry 6th Place'
     ],
   },
 
