@@ -25,9 +25,9 @@ export const campInstructors: CampInstructor[] = [
     achievements: [
       '3x USA(J)MO Qualifier',
       'AIME, AMC12, AMC10, AMC8 Perfect Scorer',
-      'CMM 1st Place Individual',
-      'BMT 1st Place Discrete', 'BMT 3rd Place Algebra',
-      'SMT 7th Place Calculus',
+      'CMM Individual 1st Place',
+      'BMT Discrete 1st Place', 'BMT Algebra 3rd Place',
+      'SMT Calculus 7th Place',
     ],
   },
   {
