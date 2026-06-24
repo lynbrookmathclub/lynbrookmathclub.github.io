@@ -27,7 +27,7 @@ export const campInstructors: CampInstructor[] = [
       'AIME, AMC12, AMC10, AMC8 Perfect Scorer',
       'CMM 1st Place Individual',
       'BMT 1st Place Discrete', 'BMT 3rd Place Algebra',
-      'SMTt 7th Place Calculus',
+      'SMT 7th Place Calculus',
     ],
   },
   {
