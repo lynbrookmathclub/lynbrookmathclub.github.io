@@ -54,11 +54,36 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
   {
+    name: 'Abhigyan Singh',
+    photoUrl: '/staff/abhigyan_singh.jpeg',
+    achievements: [
+      '4x AIME Qualifier',
+      'BMT Geometry Top 10',
+      'SMT Geometry 6th Place'
+    ],
+  },
+  {
+    name: 'Steven Xia',
+    photoUrl: "staff/steven_xia.png",
+    achievements: [
+      'Competitive Typsternity Player',
+      '3x AIME Qualifier',
+      'USAJMO Honorable Mention'
+    ],
+  },
+  {
     name: 'Benjamin Zhang',
     photoUrl: '/staff/benjamin_zhang.jpg',
     achievements: [
       'USAJMO Honarable Mention',
       '4x AIME Qualifer'
+    ],
+  },
+  {
+    name: 'William Tao',
+    photoUrl: "staff/william_tao.png",
+    achievements: [
+      
     ],
   },
   {
@@ -81,25 +106,6 @@ export const campInstructors: CampInstructor[] = [
     achievements: [
       '2x AIME Qualifier',
       'AMC10 Distinguished Honor Roll'
-    ],
-  },
-  {
-    name: 'Abhigyan Singh',
-    photoUrl: '/staff/abhigyan_singh.jpeg',
-    achievements: [
-      '4x AIME Qualifier',
-      'BMT Geometry Top 10',
-      'SMT Geometry 6th Place'
-    ],
-  },
-
-  {
-    name: 'Steven Xia',
-    photoUrl: "staff/steven_xia.png",
-    achievements: [
-      'Competitive Typsternity Player',
-      '3x AIME Qualifier',
-      'USAJMO Honorable Mention'
     ],
   },
   {
