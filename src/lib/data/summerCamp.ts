@@ -178,7 +178,7 @@ export const campCurriculum: CampSubject[] = [
 
 export const campDetails: CampDetail[] = [
   { label: 'Dates', value: 'August 3-7, 2026' },
-  { label: 'Hours', value: '9:00 AM to 5:00 PM' },
+  { label: 'Hours', value: '9:00 AM to 4:30 PM' },
   { label: 'Location', value: 'Rocklin Science Center at Lynbrook' },
   { label: 'Cost', value: '$400' },
 ];
