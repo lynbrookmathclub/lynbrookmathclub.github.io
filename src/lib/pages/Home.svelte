@@ -225,7 +225,7 @@
         Theory, Geometry, and Combinatorics at the AMC 8 and MATHCOUNTS level.
       </p>
       <p class="summer-camp-meta">
-        August 3-7, 2026 · 9am-5pm · Rocklin Science Center at Lynbrook High
+        August 3-7, 2026 · 9:00 AM to 4:30 PM · Rocklin Science Center at Lynbrook High
         School · $400
       </p>
       <div class="summer-camp-actions">

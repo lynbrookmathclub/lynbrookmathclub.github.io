@@ -59,7 +59,8 @@
   onMount(() => {
     const updateColumns = () => {
       const width = window.innerWidth;
-      instructorColumns = width >= 1100 ? 4 : width >= 900 ? 3 : width >= 700 ? 2 : 1;
+      instructorColumns =
+        width >= 1100 ? 4 : width >= 900 ? 3 : width >= 700 ? 2 : 1;
     };
 
     updateColumns();
@@ -247,30 +248,36 @@
 
     <div class="sched-block">
       <p class="body-text">
-        Each day runs from <strong>9:00 AM to 5:00 PM</strong>. Lunch is provided and students will be supervised. 
+        Each day runs from <strong>9:00 AM to 4:30 PM</strong>. Lunch is
+        provided and students will be supervised.
       </p>
 
       <h3 class="sched-heading">Daily Schedule (Tentative)</h3>
       <table class="sched-table">
         <tbody>
           <tr
-            ><td class="sched-time">9:00 AM - 10:30 AM</td><td class="sched-desc"
-              >Algebra</td
+            ><td class="sched-time">8:45 AM - 9:00 AM</td><td class="sched-desc"
+              >Drop-off</td
             ></tr
           >
           <tr
-            ><td class="sched-time">10:30 AM - 10:45 AM</td><td class="sched-desc"
-              >Break</td
+            ><td class="sched-time">9:00 AM - 10:30 AM</td><td
+              class="sched-desc">Algebra</td
             ></tr
           >
           <tr
-            ><td class="sched-time">10:45 AM - 12:15 PM</td><td class="sched-desc"
-              >Combinatorics</td
+            ><td class="sched-time">10:30 AM - 10:45 AM</td><td
+              class="sched-desc">Break</td
             ></tr
           >
           <tr
-            ><td class="sched-time">12:15 PM - 1:15 PM</td><td class="sched-desc"
-              >Lunch</td
+            ><td class="sched-time">10:45 AM - 12:15 PM</td><td
+              class="sched-desc">Combinatorics</td
+            ></tr
+          >
+          <tr
+            ><td class="sched-time">12:15 PM - 1:15 PM</td><td
+              class="sched-desc">Lunch</td
             ></tr
           >
           <tr
@@ -289,8 +296,8 @@
             ></tr
           >
           <tr
-            ><td class="sched-time">4:30 PM - 5:00 PM</td><td class="sched-desc"
-              >Review</td
+            ><td class="sched-time">4:30 PM - 4:45 PM</td><td class="sched-desc"
+              >Review/Pickup</td
             ></tr
           >
         </tbody>
@@ -318,7 +325,8 @@
           {#each row as instructor, i}
             <article
               class="instructor-card animate-fade-up"
-              style="animation-delay:{(rowIndex * instructorColumns + i) * 70}ms"
+              style="animation-delay:{(rowIndex * instructorColumns + i) *
+                70}ms"
             >
               <div class="instr-photo-wrap">
                 {#if instructor.photoUrl}
