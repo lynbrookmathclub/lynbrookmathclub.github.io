@@ -24,10 +24,6 @@ export const campInstructors: CampInstructor[] = [
     photoUrl: '/staff/sohum_uttamchandani.png',
     achievements: [
       '3x USA(J)MO Qualifier',
-      'AIME, AMC12, AMC10, AMC8 Perfect Scorer',
-      'CMM Individual 1st Place',
-      'BMT Discrete 1st Place', 'BMT Algebra 3rd Place',
-      'SMT Calculus 7th Place',
     ],
   },
   {
@@ -80,13 +76,6 @@ export const campInstructors: CampInstructor[] = [
     ],
   },
   {
-    name: 'William Tao',
-    photoUrl: "staff/william_tao.png",
-    achievements: [
-      
-    ],
-  },
-  {
     name: 'Nitin Reddy Vaka',
     achievements: [
       "USAJMO Qualifier",
@@ -121,6 +110,13 @@ export const campInstructors: CampInstructor[] = [
   {
     name: 'Mason Shu',
     achievements: [
+    ],
+  },
+    {
+    name: 'William Tao',
+    photoUrl: "staff/william_tao.png",
+    achievements: [
+      
     ],
   },
 ];
