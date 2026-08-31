@@ -1,3 +1,5 @@
+<script lang="ts"></script>
+
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">

@@ -11,6 +11,7 @@
   const NAV_LINKS = [
     { href: "/", label: "Home" },
     { href: "/slides", label: "Slides" },
+    { href: "/resources", label: "Resources" },
     { href: "/officers", label: "Officers" },
     { href: "/awards", label: "Awards" },
   ];
@@ -566,7 +567,7 @@
     background: transparent;
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 800px) {
     .navbar-links {
       display: none;
     }

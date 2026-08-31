@@ -22,14 +22,16 @@
     {#each prioritized as activity, i}
       <article class="activity-card animate-fade-up" style="animation-delay:{i * 60}ms" id={activity.id}>
         <div class="activity-card-top">
-          <div class="activity-card-media">
-            <VisualFrame
-              src={activity.visual.src}
-              alt={activity.visual.alt}
-              tone={activity.visual.tone}
-              aspectRatio="1 / 1"
-            />
-          </div>
+          {#if activity.visual.src}
+            <div class="activity-card-media">
+              <VisualFrame
+                src={activity.visual.src}
+                alt={activity.visual.alt}
+                tone={activity.visual.tone}
+                aspectRatio="1 / 1"
+              />
+            </div>
+          {/if}
 
           <div class="activity-card-body">
             <h2 class="activity-card-short-name">{activity.shortName}</h2>

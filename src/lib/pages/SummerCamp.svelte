@@ -889,10 +889,6 @@
     .instructor-row {
       grid-template-columns: repeat(var(--instructor-columns), minmax(0, 1fr));
     }
-    .instructor-card {
-      align-items: flex-start;
-      text-align: left;
-    }
     .instr-info {
       align-items: flex-start;
     }

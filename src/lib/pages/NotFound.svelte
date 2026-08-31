@@ -1,3 +1,5 @@
+<script lang="ts"></script>
+
 <div class="not-found">
   <span class="not-found-symbol" aria-hidden="true">∄</span>
   <h1 class="not-found-title">Page Not Found</h1>

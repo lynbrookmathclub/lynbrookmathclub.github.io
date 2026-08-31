@@ -5,6 +5,7 @@
   import Footer from "./lib/components/Footer.svelte";
   import Home from "./lib/pages/Home.svelte";
   import Slides from "./lib/pages/Slides.svelte";
+  import Resources from "./lib/pages/Resources.svelte";
   import Activities from "./lib/pages/Activities.svelte";
   import Lmo from "./lib/pages/Lmo.svelte";
   import SummerCamp from "./lib/pages/SummerCamp.svelte";
@@ -15,6 +16,7 @@
   const routes: Record<string, any> = {
     "/": Home,
     "/slides": Slides,
+    "/resources": Resources,
     "/activities": Activities,
     "/lmo": Lmo,
     "/summer-camp": SummerCamp,

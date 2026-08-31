@@ -107,7 +107,6 @@ export const activities: Activity[] = [
     visual: {
       label: 'Summer Camp',
       alt: 'Math Honor Society Summer Camp',
-      src: '/media/summer-camp-2026.jpg',
       tone: '#0f1a3d',
     },
   },
