@@ -292,7 +292,7 @@
     </div>
   </section>
 {/if}
-<section class="section potw">
+<!-- <section class="section potw">
   <div class="container potw-inner">
     <div class="potw-header">
       <h2 class="text-section-title">Problem of the Week</h2>
@@ -349,7 +349,7 @@
       {/if}
     </div>
   </div>
-</section>
+</section> -->
 
 <style>
   .hero {
