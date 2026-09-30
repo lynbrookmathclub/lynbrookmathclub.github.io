@@ -33,6 +33,15 @@ export const TOPIC_COLORS: Record<SlideTopicKey, { bg: string; text: string }> =
 
 export const slides: Slide[] = [
   {
+    id: '20260929-anomaly-detection',
+    title: 'Anomaly Detection',
+    date: '2026-09-29',
+    schoolYear: '2026-2027',
+    topic: 'General',
+    description: '',
+    googleSlidesId: '1kTdbiILRRnZ7kqWj0Wtw6KKgFNYmd8v617VnKk7AP40',
+  },
+  {
     id: '2026-prisoners-dilemma',
     title: 'Prisoner\'s Dilemma',
     date: '2026-09-15',
