@@ -58,7 +58,7 @@
 
     <div class="slide-card-footer">
       <span class="slide-card-date">{formatDate(slide.date)}</span>
-      <span class="slide-card-semester">{slide.semester}</span>
+      <span class="slide-card-school-year">{slide.schoolYear}</span>
     </div>
   </div>
 </svelte:element>
@@ -169,7 +169,7 @@
   }
 
   .slide-card-date,
-  .slide-card-semester {
+  .slide-card-school-year {
     font-size: var(--text-xs);
     color: var(--color-text-light);
   }

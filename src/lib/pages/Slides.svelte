@@ -1,17 +1,23 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { slides, semesters, topics, TOPIC_COLORS } from "../data/slides";
+  import {
+    slides,
+    schoolYears,
+    currentSchoolYear,
+    topics,
+    TOPIC_COLORS,
+  } from "../data/slides";
   import type { Slide } from "../data/slides";
   import SlideCard from "../components/SlideCard.svelte";
   import SlideModal from "../components/SlideModal.svelte";
-  let selectedSemester: string = "All";
+  let selectedSchoolYear: string = currentSchoolYear;
   let selectedTopic: string = "All";
   let searchQuery: string = "";
   let activeSlide: Slide | null = null;
   let viewMode: "grid" | "list" = "grid";
   $: filtered = slides.filter((s) => {
-    const matchSemester =
-      selectedSemester === "All" || s.semester === selectedSemester;
+    const matchSchoolYear =
+      selectedSchoolYear === "All" || s.schoolYear === selectedSchoolYear;
     const matchTopic = selectedTopic === "All" || s.topic === selectedTopic;
     const q = searchQuery.trim().toLowerCase();
     const matchSearch =
@@ -19,7 +25,7 @@
       s.title.toLowerCase().includes(q) ||
       s.description.toLowerCase().includes(q) ||
       s.topic.toLowerCase().includes(q);
-    return matchSemester && matchTopic && matchSearch;
+    return matchSchoolYear && matchTopic && matchSearch;
   });
 
   function openSlide(s: Slide) {
@@ -49,6 +55,7 @@
 
     const slideId = new URL(window.location.href).searchParams.get("slide");
     activeSlide = slideId ? slides.find((s) => s.id === slideId) ?? null : null;
+    if (activeSlide) selectedSchoolYear = activeSlide.schoolYear;
   }
 
   onMount(() => {
@@ -74,13 +81,13 @@
   }
 
   function clearFilters() {
-    selectedSemester = "All";
+    selectedSchoolYear = currentSchoolYear;
     selectedTopic = "All";
     searchQuery = "";
   }
 
   $: hasActiveFilters =
-    selectedSemester !== "All" ||
+    selectedSchoolYear !== currentSchoolYear ||
     selectedTopic !== "All" ||
     searchQuery.trim() !== "";
 </script>
@@ -123,12 +130,12 @@
       <div class="controls-select-wrap">
         <select
           class="controls-select"
-          bind:value={selectedSemester}
-          aria-label="Filter by semester"
+          bind:value={selectedSchoolYear}
+          aria-label="Filter by school year"
         >
-          <option value="All">All Semesters</option>
-          {#each semesters as sem}
-            <option value={sem}>{sem}</option>
+          <option value="All">All School Years</option>
+          {#each schoolYears as schoolYear}
+            <option value={schoolYear}>{schoolYear}</option>
           {/each}
         </select>
         <svg

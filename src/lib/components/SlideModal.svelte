@@ -79,7 +79,7 @@
         style="background:{topicColor.bg}; color:{topicColor.text}"
         >{slide.topic}</span
       >
-      <span class="modal-semester">{slide.semester}</span>
+      <span class="modal-school-year">{slide.schoolYear}</span>
       <span class="modal-date">{formatDate(slide.date)}</span>
     </div>
     <button class="modal-close" on:click={close} aria-label="Close">
@@ -214,13 +214,13 @@
     border-radius: var(--radius-full);
   }
 
-  .modal-semester,
+  .modal-school-year,
   .modal-date {
     font-size: var(--text-sm);
     color: var(--color-text-muted);
   }
 
-  .modal-semester::before {
+  .modal-school-year::before {
     content: "·";
     margin-right: var(--space-2);
   }
